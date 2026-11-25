@@ -1,0 +1,628 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Netflix Gameday staging results — MAINT-11962</title>
+  <style>
+    body { font-family: Georgia, serif; color: #1c1c1c; margin: 2rem auto; max-width: 1100px; padding: 0 1rem; }
+    h1 { font-size: 1.6rem; margin-bottom: 0.2rem; }
+    p { line-height: 1.45; }
+    .summary { display: flex; gap: 1rem; margin: 1.2rem 0; }
+    .summary div { border: 1px solid #ddd; padding: 0.8rem 1rem; min-width: 7rem; }
+    .summary strong { display: block; font-size: 1.4rem; }
+    table { border-collapse: collapse; width: 100%; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.92rem; }
+    th, td { border-bottom: 1px solid #e4e4e4; text-align: left; padding: 0.45rem 0.5rem; vertical-align: top; }
+    th { background: #102a43; color: white; }
+    tr.fail { background: #fde8e8; }
+    tr.pass td:last-child { color: #0b6b2f; font-weight: 600; }
+    tr.fail td:last-child { color: #9b1c1c; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <h1>Netflix Gameday on staging</h1>
+  <p>Staging, checked against <strong>MAINT-11962</strong> on 11/25/2026, 8:17:24 AM CT. Public Viewing price is $300.00, the bill credit is $150, and occupancy 1,001+ is $3,000.00. Each channel was checked on Commercial Basic Plus. Satellite was checked for every customer type the channel asks. Stream does not ask for a customer type, and National Accounts has no Stream tab.</p>
+  <div class="summary">
+    <div><strong>59</strong>Checks</div>
+    <div><strong>54</strong>Passed</div>
+    <div><strong>5</strong>Failed</div>
+  </div>
+  <table>
+    <thead>
+      <tr><th>Calculator</th><th>Sales channel</th><th>Customer type</th><th>Package</th><th>Check</th><th>Expected</th><th>Actual</th><th>Result</th></tr>
+    </thead>
+    <tbody>
+      <tr class="pass">
+      <td>Satellite</td>
+      <td>DIRECTV</td>
+      <td>New</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Netflix Gameday offered</td>
+      <td>Offered</td>
+      <td>Offered</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Satellite</td>
+      <td>DIRECTV</td>
+      <td>New</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Bill credit</td>
+      <td>$150</td>
+      <td>$150</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Satellite</td>
+      <td>DIRECTV</td>
+      <td>New</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Price at 1-50</td>
+      <td>$300.00 1-pay</td>
+      <td>$300.00 1-pay</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Satellite</td>
+      <td>DIRECTV</td>
+      <td>New</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Price at 1,001-1,500</td>
+      <td>$3,000.00 1-pay</td>
+      <td>$3,000.00 1-pay</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Satellite</td>
+      <td>DIRECTV</td>
+      <td>New</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Price at 10001+</td>
+      <td>$3,000.00 1-pay</td>
+      <td>$3,000.00 1-pay</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Satellite</td>
+      <td>DIRECTV</td>
+      <td>Existing</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Netflix Gameday offered</td>
+      <td>Offered</td>
+      <td>Offered</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Satellite</td>
+      <td>DIRECTV</td>
+      <td>Existing</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Bill credit</td>
+      <td>$150</td>
+      <td>$150</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Satellite</td>
+      <td>DIRECTV</td>
+      <td>Existing</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Price at 1-50</td>
+      <td>$300.00 1-pay</td>
+      <td>$300.00 1-pay</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Satellite</td>
+      <td>DIRECTV</td>
+      <td>Existing</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Price at 1,001-1,500</td>
+      <td>$3,000.00 1-pay</td>
+      <td>$3,000.00 1-pay</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Satellite</td>
+      <td>DIRECTV</td>
+      <td>Existing</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Price at 10001+</td>
+      <td>$3,000.00 1-pay</td>
+      <td>$3,000.00 1-pay</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Satellite</td>
+      <td>Alorica</td>
+      <td>New</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Netflix Gameday offered</td>
+      <td>Offered</td>
+      <td>Offered</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Satellite</td>
+      <td>Alorica</td>
+      <td>New</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Bill credit</td>
+      <td>$150</td>
+      <td>$150</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Satellite</td>
+      <td>Alorica</td>
+      <td>New</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Price at 1-50</td>
+      <td>$300.00 1-pay</td>
+      <td>$300.00 1-pay</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Satellite</td>
+      <td>Alorica</td>
+      <td>New</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Price at 1,001-1,500</td>
+      <td>$3,000.00 1-pay</td>
+      <td>$3,000.00 1-pay</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Satellite</td>
+      <td>Alorica</td>
+      <td>New</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Price at 10001+</td>
+      <td>$3,000.00 1-pay</td>
+      <td>$3,000.00 1-pay</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Satellite</td>
+      <td>Alorica</td>
+      <td>Winback</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Netflix Gameday offered</td>
+      <td>Offered</td>
+      <td>Offered</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Satellite</td>
+      <td>Alorica</td>
+      <td>Winback</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Bill credit</td>
+      <td>$150</td>
+      <td>$150</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Satellite</td>
+      <td>Alorica</td>
+      <td>Winback</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Price at 1-50</td>
+      <td>$300.00 1-pay</td>
+      <td>$300.00 1-pay</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Satellite</td>
+      <td>Alorica</td>
+      <td>Winback</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Price at 1,001-1,500</td>
+      <td>$3,000.00 1-pay</td>
+      <td>$3,000.00 1-pay</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Satellite</td>
+      <td>Alorica</td>
+      <td>Winback</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Price at 10001+</td>
+      <td>$3,000.00 1-pay</td>
+      <td>$3,000.00 1-pay</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Satellite</td>
+      <td>Alorica</td>
+      <td>Existing</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Netflix Gameday offered</td>
+      <td>Offered</td>
+      <td>Offered</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Satellite</td>
+      <td>Alorica</td>
+      <td>Existing</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Bill credit</td>
+      <td>$150</td>
+      <td>$150</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Satellite</td>
+      <td>Alorica</td>
+      <td>Existing</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Price at 1-50</td>
+      <td>$300.00 1-pay</td>
+      <td>$300.00 1-pay</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Satellite</td>
+      <td>Alorica</td>
+      <td>Existing</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Price at 1,001-1,500</td>
+      <td>$3,000.00 1-pay</td>
+      <td>$3,000.00 1-pay</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Satellite</td>
+      <td>Alorica</td>
+      <td>Existing</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Price at 10001+</td>
+      <td>$3,000.00 1-pay</td>
+      <td>$3,000.00 1-pay</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Satellite</td>
+      <td>Dealer</td>
+      <td>Not asked</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Netflix Gameday offered</td>
+      <td>Offered</td>
+      <td>Offered</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Satellite</td>
+      <td>Dealer</td>
+      <td>Not asked</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Bill credit</td>
+      <td>$150</td>
+      <td>$150</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Satellite</td>
+      <td>Dealer</td>
+      <td>Not asked</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Price at 1-50</td>
+      <td>$300.00 1-pay</td>
+      <td>$300.00 1-pay</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Satellite</td>
+      <td>Dealer</td>
+      <td>Not asked</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Price at 1,001-1,500</td>
+      <td>$3,000.00 1-pay</td>
+      <td>$3,000.00 1-pay</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Satellite</td>
+      <td>Dealer</td>
+      <td>Not asked</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Price at 10001+</td>
+      <td>$3,000.00 1-pay</td>
+      <td>$3,000.00 1-pay</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Satellite</td>
+      <td>National Accounts</td>
+      <td>Not asked</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Netflix Gameday offered</td>
+      <td>Offered</td>
+      <td>Offered</td>
+      <td>Pass</td>
+    </tr>
+<tr class="fail">
+      <td>Satellite</td>
+      <td>National Accounts</td>
+      <td>Not asked</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Bill credit</td>
+      <td>$150</td>
+      <td>Not shown</td>
+      <td>Fail</td>
+    </tr>
+<tr class="pass">
+      <td>Satellite</td>
+      <td>National Accounts</td>
+      <td>Not asked</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Price</td>
+      <td>$300.00 1-pay</td>
+      <td>$300.00 1-pay</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Satellite</td>
+      <td>Telco</td>
+      <td>Not asked</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Netflix Gameday offered</td>
+      <td>Offered</td>
+      <td>Offered</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Satellite</td>
+      <td>Telco</td>
+      <td>Not asked</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Bill credit</td>
+      <td>$150</td>
+      <td>$150</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Satellite</td>
+      <td>Telco</td>
+      <td>Not asked</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Price at 1-50</td>
+      <td>$300.00 1-pay</td>
+      <td>$300.00 1-pay</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Satellite</td>
+      <td>Telco</td>
+      <td>Not asked</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Price at 1,001-1,500</td>
+      <td>$3,000.00 1-pay</td>
+      <td>$3,000.00 1-pay</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Satellite</td>
+      <td>Telco</td>
+      <td>Not asked</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Price at 10001+</td>
+      <td>$3,000.00 1-pay</td>
+      <td>$3,000.00 1-pay</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Stream</td>
+      <td>DIRECTV</td>
+      <td>Not asked</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Netflix Gameday offered</td>
+      <td>Offered</td>
+      <td>Offered</td>
+      <td>Pass</td>
+    </tr>
+<tr class="fail">
+      <td>Stream</td>
+      <td>DIRECTV</td>
+      <td>Not asked</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Bill credit</td>
+      <td>$150</td>
+      <td>Not shown</td>
+      <td>Fail</td>
+    </tr>
+<tr class="pass">
+      <td>Stream</td>
+      <td>DIRECTV</td>
+      <td>Not asked</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Price at 1-50</td>
+      <td>$300.00 1-pay</td>
+      <td>$300.00 1-pay</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Stream</td>
+      <td>DIRECTV</td>
+      <td>Not asked</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Price at 1,001-1,500</td>
+      <td>$3,000.00 1-pay</td>
+      <td>$3,000.00 1-pay</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Stream</td>
+      <td>DIRECTV</td>
+      <td>Not asked</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Price at 10001+</td>
+      <td>$3,000.00 1-pay</td>
+      <td>$3,000.00 1-pay</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Stream</td>
+      <td>Alorica</td>
+      <td>Not asked</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Netflix Gameday offered</td>
+      <td>Offered</td>
+      <td>Offered</td>
+      <td>Pass</td>
+    </tr>
+<tr class="fail">
+      <td>Stream</td>
+      <td>Alorica</td>
+      <td>Not asked</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Bill credit</td>
+      <td>$150</td>
+      <td>Not shown</td>
+      <td>Fail</td>
+    </tr>
+<tr class="pass">
+      <td>Stream</td>
+      <td>Alorica</td>
+      <td>Not asked</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Price at 1-50</td>
+      <td>$300.00 1-pay</td>
+      <td>$300.00 1-pay</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Stream</td>
+      <td>Alorica</td>
+      <td>Not asked</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Price at 1,001-1,500</td>
+      <td>$3,000.00 1-pay</td>
+      <td>$3,000.00 1-pay</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Stream</td>
+      <td>Alorica</td>
+      <td>Not asked</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Price at 10001+</td>
+      <td>$3,000.00 1-pay</td>
+      <td>$3,000.00 1-pay</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Stream</td>
+      <td>Dealer</td>
+      <td>Not asked</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Netflix Gameday offered</td>
+      <td>Offered</td>
+      <td>Offered</td>
+      <td>Pass</td>
+    </tr>
+<tr class="fail">
+      <td>Stream</td>
+      <td>Dealer</td>
+      <td>Not asked</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Bill credit</td>
+      <td>$150</td>
+      <td>Not shown</td>
+      <td>Fail</td>
+    </tr>
+<tr class="pass">
+      <td>Stream</td>
+      <td>Dealer</td>
+      <td>Not asked</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Price at 1-50</td>
+      <td>$300.00 1-pay</td>
+      <td>$300.00 1-pay</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Stream</td>
+      <td>Dealer</td>
+      <td>Not asked</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Price at 1,001-1,500</td>
+      <td>$3,000.00 1-pay</td>
+      <td>$3,000.00 1-pay</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Stream</td>
+      <td>Dealer</td>
+      <td>Not asked</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Price at 10001+</td>
+      <td>$3,000.00 1-pay</td>
+      <td>$3,000.00 1-pay</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Stream</td>
+      <td>National Accounts</td>
+      <td>Not asked</td>
+      <td>—</td>
+      <td>Calculate Stream tab</td>
+      <td>Not offered</td>
+      <td>Not offered</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Stream</td>
+      <td>Telco</td>
+      <td>Not asked</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Netflix Gameday offered</td>
+      <td>Offered</td>
+      <td>Offered</td>
+      <td>Pass</td>
+    </tr>
+<tr class="fail">
+      <td>Stream</td>
+      <td>Telco</td>
+      <td>Not asked</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Bill credit</td>
+      <td>$150</td>
+      <td>Not shown</td>
+      <td>Fail</td>
+    </tr>
+<tr class="pass">
+      <td>Stream</td>
+      <td>Telco</td>
+      <td>Not asked</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Price at 1-50</td>
+      <td>$300.00 1-pay</td>
+      <td>$300.00 1-pay</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Stream</td>
+      <td>Telco</td>
+      <td>Not asked</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Price at 1,001-1,500</td>
+      <td>$3,000.00 1-pay</td>
+      <td>$3,000.00 1-pay</td>
+      <td>Pass</td>
+    </tr>
+<tr class="pass">
+      <td>Stream</td>
+      <td>Telco</td>
+      <td>Not asked</td>
+      <td>Commercial Basic Plus | $44.99</td>
+      <td>Price at 10001+</td>
+      <td>$3,000.00 1-pay</td>
+      <td>$3,000.00 1-pay</td>
+      <td>Pass</td>
+    </tr>
+    </tbody>
+  </table>
+</body>
+</html>
