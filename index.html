@@ -12,101 +12,23 @@
     .summary { display: flex; gap: 1rem; margin: 1.2rem 0; }
     .summary div { border: 1px solid #ddd; padding: 0.8rem 1rem; min-width: 7rem; }
     .summary strong { display: block; font-size: 1.4rem; }
-    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-    figure { margin: 0; border: 1px solid #ddd; background: white; }
-    figure.fail { border-color: #e7b4b4; background: #fff8f8; }
-    img { width: 100%; height: auto; display: block; background: #f4f4f4; }
-    figcaption { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.88rem; padding: 0.6rem 0.7rem 0.8rem; line-height: 1.4; }
     table { border-collapse: collapse; width: 100%; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.92rem; }
     th, td { border-bottom: 1px solid #e4e4e4; text-align: left; padding: 0.45rem 0.5rem; vertical-align: top; }
     th { background: #102a43; color: white; position: sticky; top: 0; }
     tr.fail { background: #fde8e8; }
     tr.pass td:last-child { color: #0b6b2f; font-weight: 600; }
     tr.fail td:last-child { color: #9b1c1c; font-weight: 600; }
-    @media (max-width: 800px) { .grid { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
   <h1>Netflix Gameday on staging</h1>
-  <p>Staging, checked against <strong>MAINT-11962</strong> on 11/25/2026, 9:58:23 AM CT. Public Viewing price is $300.00, and occupancy 1,001+ is $3,000.00. The $150 bill credit applies only on Satellite, and not on the National Accounts view. Stream has no bill credit. Every package was checked on every sales channel. Satellite was also checked for every customer type that channel asks. Stream does not ask for a customer type. National Accounts has no Stream tab and no occupancy control. Music Choice Service ONLY removes Sports, so that package is recorded as not offered. Passing screenshots have Netflix Gameday selected.</p>
+  <p>Staging, checked against <strong>MAINT-11962</strong> on 11/25/2026, 9:58:23 AM CT. Public Viewing price is $300.00, and occupancy 1,001+ is $3,000.00. The $150 bill credit applies only on Satellite, and not on the National Accounts view. Stream has no bill credit. Every package was checked on every sales channel. Satellite was also checked for every customer type that channel asks. Stream does not ask for a customer type. National Accounts has no Stream tab and no occupancy control. Music Choice Service ONLY removes Sports, so that package is recorded as not offered.</p>
   <div class="summary">
     <div><strong>449</strong>Checks</div>
     <div><strong>449</strong>Passed</div>
     <div><strong>0</strong>Failed</div>
     <div><strong>14</strong>Packages</div>
   </div>
-
-  <h2>Satellite — Netflix Gameday selected</h2>
-  <div class="grid"><figure>
-        <img src="images/pass-satellite-directv-300-00-at-occupancy-1-50.png" alt="Pass: Satellite DIRECTV">
-        <figcaption><strong>Pass · DIRECTV</strong><br>$300.00 at occupancy 1-50<br>New · Commercial Basic Plus | $44.99</figcaption>
-      </figure>
-<figure>
-        <img src="images/pass-satellite-directv-3-000-00-at-occupancy-1-001-1-500.png" alt="Pass: Satellite DIRECTV">
-        <figcaption><strong>Pass · DIRECTV</strong><br>$3,000.00 at occupancy 1,001-1,500<br>New · Commercial Basic Plus | $44.99</figcaption>
-      </figure>
-<figure>
-        <img src="images/pass-satellite-alorica-300-00-at-occupancy-1-50.png" alt="Pass: Satellite Alorica">
-        <figcaption><strong>Pass · Alorica</strong><br>$300.00 at occupancy 1-50<br>New · Commercial Basic Plus | $44.99</figcaption>
-      </figure>
-<figure>
-        <img src="images/pass-satellite-alorica-3-000-00-at-occupancy-1-001-1-500.png" alt="Pass: Satellite Alorica">
-        <figcaption><strong>Pass · Alorica</strong><br>$3,000.00 at occupancy 1,001-1,500<br>New · Commercial Basic Plus | $44.99</figcaption>
-      </figure>
-<figure>
-        <img src="images/pass-satellite-dealer-300-00-at-occupancy-1-50.png" alt="Pass: Satellite Dealer">
-        <figcaption><strong>Pass · Dealer</strong><br>$300.00 at occupancy 1-50<br>Not asked · Commercial Basic Plus | $44.99</figcaption>
-      </figure>
-<figure>
-        <img src="images/pass-satellite-dealer-3-000-00-at-occupancy-1-001-1-500.png" alt="Pass: Satellite Dealer">
-        <figcaption><strong>Pass · Dealer</strong><br>$3,000.00 at occupancy 1,001-1,500<br>Not asked · Commercial Basic Plus | $44.99</figcaption>
-      </figure>
-<figure>
-        <img src="images/pass-satellite-national-accounts-300-00.png" alt="Pass: Satellite National Accounts">
-        <figcaption><strong>Pass · National Accounts</strong><br>$300.00<br>Not asked · Commercial Basic Plus | $44.99</figcaption>
-      </figure>
-<figure>
-        <img src="images/pass-satellite-telco-300-00-at-occupancy-1-50.png" alt="Pass: Satellite Telco">
-        <figcaption><strong>Pass · Telco</strong><br>$300.00 at occupancy 1-50<br>Not asked · Commercial Basic Plus | $44.99</figcaption>
-      </figure>
-<figure>
-        <img src="images/pass-satellite-telco-3-000-00-at-occupancy-1-001-1-500.png" alt="Pass: Satellite Telco">
-        <figcaption><strong>Pass · Telco</strong><br>$3,000.00 at occupancy 1,001-1,500<br>Not asked · Commercial Basic Plus | $44.99</figcaption>
-      </figure></div>
-
-  <h2>Stream — Netflix Gameday selected</h2>
-  <div class="grid"><figure>
-        <img src="images/pass-stream-directv-300-00-at-occupancy-1-50.png" alt="Pass: Stream DIRECTV">
-        <figcaption><strong>Pass · DIRECTV</strong><br>$300.00 at occupancy 1-50<br>Not asked · Commercial Basic Plus | $44.99</figcaption>
-      </figure>
-<figure>
-        <img src="images/pass-stream-directv-3-000-00-at-occupancy-1-001-1-500.png" alt="Pass: Stream DIRECTV">
-        <figcaption><strong>Pass · DIRECTV</strong><br>$3,000.00 at occupancy 1,001-1,500<br>Not asked · Commercial Basic Plus | $44.99</figcaption>
-      </figure>
-<figure>
-        <img src="images/pass-stream-alorica-300-00-at-occupancy-1-50.png" alt="Pass: Stream Alorica">
-        <figcaption><strong>Pass · Alorica</strong><br>$300.00 at occupancy 1-50<br>Not asked · Commercial Basic Plus | $44.99</figcaption>
-      </figure>
-<figure>
-        <img src="images/pass-stream-alorica-3-000-00-at-occupancy-1-001-1-500.png" alt="Pass: Stream Alorica">
-        <figcaption><strong>Pass · Alorica</strong><br>$3,000.00 at occupancy 1,001-1,500<br>Not asked · Commercial Basic Plus | $44.99</figcaption>
-      </figure>
-<figure>
-        <img src="images/pass-stream-dealer-300-00-at-occupancy-1-50.png" alt="Pass: Stream Dealer">
-        <figcaption><strong>Pass · Dealer</strong><br>$300.00 at occupancy 1-50<br>Not asked · Commercial Basic Plus | $44.99</figcaption>
-      </figure>
-<figure>
-        <img src="images/pass-stream-dealer-3-000-00-at-occupancy-1-001-1-500.png" alt="Pass: Stream Dealer">
-        <figcaption><strong>Pass · Dealer</strong><br>$3,000.00 at occupancy 1,001-1,500<br>Not asked · Commercial Basic Plus | $44.99</figcaption>
-      </figure>
-<figure>
-        <img src="images/pass-stream-telco-300-00-at-occupancy-1-50.png" alt="Pass: Stream Telco">
-        <figcaption><strong>Pass · Telco</strong><br>$300.00 at occupancy 1-50<br>Not asked · Commercial Basic Plus | $44.99</figcaption>
-      </figure>
-<figure>
-        <img src="images/pass-stream-telco-3-000-00-at-occupancy-1-001-1-500.png" alt="Pass: Stream Telco">
-        <figcaption><strong>Pass · Telco</strong><br>$3,000.00 at occupancy 1,001-1,500<br>Not asked · Commercial Basic Plus | $44.99</figcaption>
-      </figure></div>
 
   <h2>Failures (0)</h2>
   <p>None. Every check passed.</p>
